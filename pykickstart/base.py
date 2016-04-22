@@ -191,6 +191,9 @@ class KickstartCommand(KickstartObject):
         warnings.warn("_setToObj has been renamed to set_to_obj.  The old name will be removed in a future release.", PendingDeprecationWarning, stacklevel=2)
         self.set_to_obj(namespace, obj)
 
+    def __ne__(self, other):
+        return not self == other
+
 class DeprecatedCommand(KickstartCommand):
     """Specify that a command is deprecated and no longer has any function.
        Any command that is deprecated should be subclassed from this class,
@@ -529,3 +532,6 @@ class BaseData(KickstartObject):
         """
         for attr in [k for k in self.removedAttrs if hasattr(self, k)]:
             delattr(self, attr)
+
+    def __ne__(self, other):
+        return not self == other

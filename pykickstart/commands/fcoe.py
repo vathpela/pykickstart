@@ -37,9 +37,6 @@ class F12_FcoeData(BaseData):
 
         return self.nic == y.nic
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
 

@@ -43,9 +43,6 @@ class FC6_UserData(BaseData):
 
         return self.name == y.name
 
-    def __ne__(self, y):
-        return not self == y
-
     def __str__(self):
         retval = BaseData.__str__(self)
 

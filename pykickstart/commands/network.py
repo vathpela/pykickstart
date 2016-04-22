@@ -55,9 +55,6 @@ class FC3_NetworkData(BaseData):
 
         return self.device and self.device == y.device
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
 

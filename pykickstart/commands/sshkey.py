@@ -39,9 +39,6 @@ class F22_SshKeyData(BaseData):
 
         return self.username == y.username
 
-    def __ne__(self, y):
-        return not self == y
-
     def __str__(self):
         retval = BaseData.__str__(self)
 

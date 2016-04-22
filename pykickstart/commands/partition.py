@@ -51,9 +51,6 @@ class FC3_PartData(BaseData):
 
         return self.mountpoint == y.mountpoint
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
 

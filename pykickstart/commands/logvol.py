@@ -48,9 +48,6 @@ class FC3_LogVolData(BaseData):
 
         return self.vgname == y.vgname and self.name == y.name
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
 

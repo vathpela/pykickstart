@@ -41,9 +41,6 @@ class FC3_HardDrive(KickstartCommand):
 
         return self.biospart == other.biospart and self.partition == other.partition and self.dir == other.dir
 
-    def __ne__(self, other):
-        return not self == other
-
     def __str__(self):
         retval = KickstartCommand.__str__(self)
         if not self.seen:

@@ -41,9 +41,6 @@ class FC6_DmRaidData(BaseData):
 
         return self.name == y.name and self.devices == y.devices
 
-    def __ne__(self, y):
-        return not self == y
-
     def __str__(self):
         retval = BaseData.__str__(self)
         retval += "dmraid --name=%s" % self.name

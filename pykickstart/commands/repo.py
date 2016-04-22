@@ -40,9 +40,6 @@ class FC6_RepoData(BaseData):
 
         return self.name == y.name
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
 

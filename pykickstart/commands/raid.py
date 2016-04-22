@@ -45,9 +45,6 @@ class FC3_RaidData(BaseData):
 
         return self.device == y.device
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
 

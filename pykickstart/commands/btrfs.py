@@ -50,9 +50,6 @@ class F17_BTRFSData(BaseData):
 
         return self.mountpoint == y.mountpoint
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
         if not self.format:

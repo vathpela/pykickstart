@@ -37,9 +37,6 @@ class FC3_NFS(KickstartCommand):
 
         return self.server == other.server and self.dir == other.dir
 
-    def __ne__(self, other):
-        return not self == other
-
     def __str__(self):
         retval = KickstartCommand.__str__(self)
         if not self.seen:

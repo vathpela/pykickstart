@@ -39,9 +39,6 @@ class FC3_Url(KickstartCommand):
 
         return self.url == other.url
 
-    def __ne__(self, other):
-        return not self == other
-
     def __str__(self):
         retval = KickstartCommand.__str__(self)
 

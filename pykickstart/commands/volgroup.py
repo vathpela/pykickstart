@@ -42,9 +42,6 @@ class FC3_VolGroupData(BaseData):
 
         return self.vgname == y.vgname
 
-    def __ne__(self, y):
-        return not self == y
-
     def _getArgsAsStr(self):
         retval = ""
         if not self.format:
